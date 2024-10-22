@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-22T11:40:36 EET" name="APi Test-Suite" finished-at="2024-10-22T11:40:50 EET" duration-ms="13405">
+    <groups>
+    </groups>
+    <test started-at="2024-10-22T11:40:36 EET" name="Api test" finished-at="2024-10-22T11:40:50 EET" duration-ms="13405">
+      <class name="api.PostDuplicateBrands">
+        <test-method signature="checkNoDuplicateDataCreation()[pri:0, instance:api.PostDuplicateBrands@5d47c63f]" started-at="2024-10-22T11:40:48 EET" name="checkNoDuplicateDataCreation" finished-at="2024-10-22T11:40:48 EET" duration-ms="802" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkNoDuplicateDataCreation -->
+      </class> <!-- api.PostDuplicateBrands -->
+      <class name="api.ListOfBrands">
+        <test-method signature="check_That_each_Brand_Object_contains_id_and_name()[pri:0, instance:api.ListOfBrands@52aa2946]" started-at="2024-10-22T11:40:36 EET" name="check_That_each_Brand_Object_contains_id_and_name" finished-at="2024-10-22T11:40:41 EET" duration-ms="4619" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_That_each_Brand_Object_contains_id_and_name -->
+        <test-method signature="check_that_listofbrands_has_more_than_one_entry()[pri:0, instance:api.ListOfBrands@52aa2946]" started-at="2024-10-22T11:40:41 EET" name="check_that_listofbrands_has_more_than_one_entry" finished-at="2024-10-22T11:40:44 EET" duration-ms="2807" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_that_listofbrands_has_more_than_one_entry -->
+        <test-method signature="validate_StatusCode()[pri:0, instance:api.ListOfBrands@52aa2946]" started-at="2024-10-22T11:40:44 EET" name="validate_StatusCode" finished-at="2024-10-22T11:40:45 EET" duration-ms="1741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_StatusCode -->
+      </class> <!-- api.ListOfBrands -->
+      <class name="api.UpdatOrDeletNoExistBrand">
+        <test-method signature="deleteBrandNotExistsID()[pri:0, instance:api.UpdatOrDeletNoExistBrand@5ea434c8]" started-at="2024-10-22T11:40:48 EET" name="deleteBrandNotExistsID" finished-at="2024-10-22T11:40:49 EET" duration-ms="627" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBrandNotExistsID -->
+        <test-method signature="updateBrandNotExistsID()[pri:0, instance:api.UpdatOrDeletNoExistBrand@5ea434c8]" started-at="2024-10-22T11:40:49 EET" name="updateBrandNotExistsID" finished-at="2024-10-22T11:40:50 EET" duration-ms="607" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateBrandNotExistsID -->
+      </class> <!-- api.UpdatOrDeletNoExistBrand -->
+      <class name="api.GetBrandNotExists">
+        <test-method signature="getBrandNotExists()[pri:0, instance:api.GetBrandNotExists@67e2d983]" started-at="2024-10-22T11:40:47 EET" name="getBrandNotExists" finished-at="2024-10-22T11:40:48 EET" duration-ms="664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBrandNotExists -->
+      </class> <!-- api.GetBrandNotExists -->
+      <class name="api.GetBrandById">
+        <test-method signature="checkBrandNameForSpecificID()[pri:0, instance:api.GetBrandById@4de5031f]" started-at="2024-10-22T11:40:45 EET" name="checkBrandNameForSpecificID" finished-at="2024-10-22T11:40:46 EET" duration-ms="765" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkBrandNameForSpecificID -->
+        <test-method signature="checkStatusCodeForReqID()[pri:0, instance:api.GetBrandById@4de5031f]" started-at="2024-10-22T11:40:46 EET" name="checkStatusCodeForReqID" finished-at="2024-10-22T11:40:47 EET" duration-ms="718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatusCodeForReqID -->
+      </class> <!-- api.GetBrandById -->
+    </test> <!-- Api test -->
+  </suite> <!-- APi Test-Suite -->
+</testng-results>

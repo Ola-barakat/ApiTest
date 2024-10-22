@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-APi_Test_Suite" class="navigator-link">
+              <span class="suite-name border-passed">APi Test-Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-APi_Test_Suite" class="navigator-link ">
+                    <span>D:\Api projects\API _Automation_Assessment\src\TestNg.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-APi_Test_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-APi_Test_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-APi_Test_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-APi_Test_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-APi_Test_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-APi_Test_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">9 methods,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-APi_Test_Suite" class="hide-methods passed suite-APi_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-APi_Test_Suite -->
+                      <a href="#" panel-name="suite-APi_Test_Suite" class="show-methods passed suite-APi_Test_Suite"> (show)</a> <!-- show-methods passed suite-APi_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-APi_Test_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APi_Test_Suite" title="api.GetBrandById" class="method navigator-link" hash-for-method="checkBrandNameForSpecificID">checkBrandNameForSpecificID</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APi_Test_Suite" title="api.PostDuplicateBrands" class="method navigator-link" hash-for-method="checkNoDuplicateDataCreation">checkNoDuplicateDataCreation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APi_Test_Suite" title="api.GetBrandById" class="method navigator-link" hash-for-method="checkStatusCodeForReqID">checkStatusCodeForReqID</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APi_Test_Suite" title="api.ListOfBrands" class="method navigator-link" hash-for-method="check_That_each_Brand_Object_contains_id_and_name">check_That_each_Brand_Object_contains_id_and_name</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APi_Test_Suite" title="api.ListOfBrands" class="method navigator-link" hash-for-method="check_that_listofbrands_has_more_than_one_entry">check_that_listofbrands_has_more_than_one_entry</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APi_Test_Suite" title="api.UpdatOrDeletNoExistBrand" class="method navigator-link" hash-for-method="deleteBrandNotExistsID">deleteBrandNotExistsID</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APi_Test_Suite" title="api.GetBrandNotExists" class="method navigator-link" hash-for-method="getBrandNotExists">getBrandNotExists</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APi_Test_Suite" title="api.UpdatOrDeletNoExistBrand" class="method navigator-link" hash-for-method="updateBrandNotExistsID">updateBrandNotExistsID</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-APi_Test_Suite" title="api.ListOfBrands" class="method navigator-link" hash-for-method="validate_StatusCode">validate_StatusCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-APi_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-APi_Test_Suite" class="panel APi_Test_Suite">
+          <div class="suite-APi_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">api.PostDuplicateBrands</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkNoDuplicateDataCreation">
+                  </a> <!-- checkNoDuplicateDataCreation -->
+                  <span class="method-name">checkNoDuplicateDataCreation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-APi_Test_Suite-class-passed -->
+          <div class="suite-APi_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">api.UpdatOrDeletNoExistBrand</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteBrandNotExistsID">
+                  </a> <!-- deleteBrandNotExistsID -->
+                  <span class="method-name">deleteBrandNotExistsID</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateBrandNotExistsID">
+                  </a> <!-- updateBrandNotExistsID -->
+                  <span class="method-name">updateBrandNotExistsID</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-APi_Test_Suite-class-passed -->
+          <div class="suite-APi_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">api.ListOfBrands</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="check_That_each_Brand_Object_contains_id_and_name">
+                  </a> <!-- check_That_each_Brand_Object_contains_id_and_name -->
+                  <span class="method-name">check_That_each_Brand_Object_contains_id_and_name</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="check_that_listofbrands_has_more_than_one_entry">
+                  </a> <!-- check_that_listofbrands_has_more_than_one_entry -->
+                  <span class="method-name">check_that_listofbrands_has_more_than_one_entry</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validate_StatusCode">
+                  </a> <!-- validate_StatusCode -->
+                  <span class="method-name">validate_StatusCode</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-APi_Test_Suite-class-passed -->
+          <div class="suite-APi_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">api.GetBrandById</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkBrandNameForSpecificID">
+                  </a> <!-- checkBrandNameForSpecificID -->
+                  <span class="method-name">checkBrandNameForSpecificID</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkStatusCodeForReqID">
+                  </a> <!-- checkStatusCodeForReqID -->
+                  <span class="method-name">checkStatusCodeForReqID</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-APi_Test_Suite-class-passed -->
+          <div class="suite-APi_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">api.GetBrandNotExists</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getBrandNotExists">
+                  </a> <!-- getBrandNotExists -->
+                  <span class="method-name">getBrandNotExists</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-APi_Test_Suite-class-passed -->
+        </div> <!-- panel APi_Test_Suite -->
+        <div panel-name="test-xml-APi_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Api projects\API _Automation_Assessment\src\TestNg.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;APi Test-Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Api test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;api.ListOfBrands&quot;/&gt;
+      &lt;class name=&quot;api.GetBrandById&quot;/&gt;
+      &lt;class name=&quot;api.GetBrandNotExists&quot;/&gt;
+      &lt;class name=&quot;api.PostDuplicateBrands&quot;/&gt;
+      &lt;class name=&quot;api.UpdatOrDeletNoExistBrand&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Api test --&gt;
+&lt;/suite&gt; &lt;!-- APi Test-Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-APi_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for APi Test-Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Api test (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-APi_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for APi Test-Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-APi_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for APi Test-Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_APi_Test_Suite');
+function tableData_APi_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(9);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'check_That_each_Brand_Object_contains_id_and_name')
+data.setCell(0, 2, 'api.ListOfBrands')
+data.setCell(0, 3, 4619);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'check_that_listofbrands_has_more_than_one_entry')
+data.setCell(1, 2, 'api.ListOfBrands')
+data.setCell(1, 3, 2807);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'validate_StatusCode')
+data.setCell(2, 2, 'api.ListOfBrands')
+data.setCell(2, 3, 1741);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'checkNoDuplicateDataCreation')
+data.setCell(3, 2, 'api.PostDuplicateBrands')
+data.setCell(3, 3, 802);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'checkBrandNameForSpecificID')
+data.setCell(4, 2, 'api.GetBrandById')
+data.setCell(4, 3, 765);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'checkStatusCodeForReqID')
+data.setCell(5, 2, 'api.GetBrandById')
+data.setCell(5, 3, 718);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'getBrandNotExists')
+data.setCell(6, 2, 'api.GetBrandNotExists')
+data.setCell(6, 3, 664);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'deleteBrandNotExistsID')
+data.setCell(7, 2, 'api.UpdatOrDeletNoExistBrand')
+data.setCell(7, 3, 627);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'updateBrandNotExistsID')
+data.setCell(8, 2, 'api.UpdatOrDeletNoExistBrand')
+data.setCell(8, 3, 607);
+window.suiteTableData['APi_Test_Suite']= { tableData: data, tableDiv: 'times-div-APi_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <div id="times-div-APi_Test_Suite">
+              </div> <!-- times-div-APi_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-APi_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for APi Test-Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-APi_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-APi_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">api.ListOfBrands</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">check_That_each_Brand_Object_contains_id_and_name</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">check_that_listofbrands_has_more_than_one_entry</span>
+                <span class="method-start">4623 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validate_StatusCode</span>
+                <span class="method-start">7432 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">api.GetBrandById</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkBrandNameForSpecificID</span>
+                <span class="method-start">9178 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkStatusCodeForReqID</span>
+                <span class="method-start">9943 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">api.GetBrandNotExists</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getBrandNotExists</span>
+                <span class="method-start">10662 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">api.PostDuplicateBrands</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkNoDuplicateDataCreation</span>
+                <span class="method-start">11327 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">api.UpdatOrDeletNoExistBrand</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">deleteBrandNotExistsID</span>
+                <span class="method-start">12130 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateBrandNotExistsID</span>
+                <span class="method-start">12758 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
