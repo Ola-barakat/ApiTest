@@ -1,16 +1,32 @@
 package api;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import org.junit.After;
+import org.junit.Before;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class GetBrandNotExists extends BaseApi{
 
+    ExtentReports extent;
+    ExtentTest test;
+
     private   String id= "123";
     private String expectedError="Unable to fetch brand";
+
+    @Before
+    public void setup() {
+        ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter("extent.html");
+        extent = new ExtentReports();
+        extent.attachReporter(htmlReporter);
+    }
 
     @Test
     public void getBrandNotExists() {
@@ -21,6 +37,13 @@ public class GetBrandNotExists extends BaseApi{
         String error = jason.get("error");
         Assert.assertEquals(error,expectedError);
         System.out.println(error);
+        test = extent.createTest("getBrandNotExists", "check that brand nor returned");
+        test.log(Status.INFO, "success");
 
+    }
+
+    @After
+    public void tearDown() {
+        extent.flush();
     }
 }
