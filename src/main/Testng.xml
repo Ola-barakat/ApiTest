@@ -4,6 +4,10 @@
 
         <classes>
             <class name="ApiTests.getListOfBrands.GetListOfBrandsRunner"/>
+            <class name="ApiTests.getBrandById.GetBrandRunner"/>
+            <class name="ApiTests.getBrandNotExists.GetBrandNotExixtsRunner"/>
+            <class name="ApiTests.postDuplicateBrands.PostDuplicateBrandsRunner"/>
+            <class name="ApiTests.UpdateOrDeletNoExistBrand.UpdateOrDeletNoExistBrandRunner"/>
 
 
         </classes>
