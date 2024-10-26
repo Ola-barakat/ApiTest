@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="APi Test-Suite" >
+    <test name="ApiTests test" >
+
+        <classes>
+            <class name="ApiTests.getListOfBrands.GetListOfBrandsRunner"/>
+
+
+        </classes>
+    </test>
+</suite>
