@@ -35,9 +35,9 @@ public class PostDuplicateBrands extends BaseApi {
         JsonPath  jason = responce.jsonPath();
         String error = jason.get("error");
         Assert.assertEquals(error,brandName+" "+expectedError);
-        System.out.println(error);
+        System.out.println("Error Message For creation of duplicate brand is  "+error);
+        System.out.println("Status Code For creation of duplicate brand is  "+responce.getStatusCode());
+
     }
-
-
 }
 

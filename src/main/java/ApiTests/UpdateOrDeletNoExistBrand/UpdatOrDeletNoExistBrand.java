@@ -40,7 +40,8 @@ public class UpdatOrDeletNoExistBrand extends BaseApi {
         JsonPath  jason = responce.jsonPath();
         String error = jason.get("error");
         Assert.assertEquals(error,expectedError1);
-        System.out.println(error);
+        System.out.println("Error Message For delete non exists brand is  "+error);
+        System.out.println("Status Code For delete non exists  brand is  "+responce.getStatusCode());
     }
 
 
@@ -56,6 +57,8 @@ public class UpdatOrDeletNoExistBrand extends BaseApi {
         JsonPath  jason = responce.jsonPath();
         String error = jason.get("error");
         Assert.assertEquals(error,expectedError2);
-        System.out.println(error);
+        System.out.println("Error Message For update non exists brand is  "+error);
+        System.out.println("Status Code For update non exists  brand is  "+responce.getStatusCode());
+
     }
 }

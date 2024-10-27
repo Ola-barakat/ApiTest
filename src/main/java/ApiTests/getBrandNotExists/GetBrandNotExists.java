@@ -2,13 +2,10 @@ package ApiTests.getBrandNotExists;
 
 import Api.BaseApi;
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.Then;
-import io.restassured.RestAssured;
+import io.cucumber.java.en.Then;;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
-import org.testng.annotations.Test;
 
 public class GetBrandNotExists extends BaseApi {
 
@@ -29,6 +26,7 @@ public class GetBrandNotExists extends BaseApi {
         JsonPath  jason = responce.jsonPath();
         String error = jason.get("error");
         Assert.assertEquals(error,expectedError);
-        System.out.println(error);
+        System.out.println("Error message incase search for brand with id not exists "+error);
+        System.out.println("Status code incase search for brand with id not exists "+responce.getStatusCode());
     }
 }

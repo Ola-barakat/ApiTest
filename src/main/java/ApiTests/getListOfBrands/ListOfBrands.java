@@ -1,18 +1,12 @@
 package ApiTests.getListOfBrands;
 
-
-
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.testng.Assert;
-import org.testng.annotations.Test;
-
-
 import Api.BaseApi;
-import io.restassured.RestAssured;
 import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
+
 
 import java.util.List;
 
@@ -22,7 +16,6 @@ public class ListOfBrands extends BaseApi {
     public void sendGetRequest() {
         BaseApi baseApi=new BaseApi();
         baseApi.getRequest();
-  //      System.out.println(baseApi.getRequest().jsonPath().getList("name"));
     }
 
     @Then("validate Status Code is ok")
@@ -45,7 +38,9 @@ public class ListOfBrands extends BaseApi {
         for(BrandsClass brand : allBrands)
         {
             Assert.assertTrue(brand._id !=null && brand.name !=null);
-            System.out.println("brand: " + brand.name);
+            System.out.println("Brand name : " + brand.name);
+            System.out.println("Brand ID : " + brand._id);
+
         }
     }
 

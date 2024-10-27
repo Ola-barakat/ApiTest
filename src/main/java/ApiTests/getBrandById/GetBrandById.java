@@ -4,12 +4,10 @@ import Api.BaseApi;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
-import org.testng.annotations.Test;
+
 
 public class GetBrandById extends BaseApi {
 
@@ -35,9 +33,8 @@ public class GetBrandById extends BaseApi {
         JsonPath  jason = responce.jsonPath();
         String name = jason.get("name");
         Assert.assertEquals(name,expectedName);
-        System.out.println(name);
-        String response=responce.getBody().asString();
-        System.out.println(response);
+        System.out.println("Status Code IS "+responce.getStatusCode());
+        System.out.println("Brand Name For searched ID Is "+name);
     }
 
 
