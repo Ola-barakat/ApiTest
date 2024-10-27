@@ -47,7 +47,6 @@ public class BaseApi {
     }
 
     public Response updateBrandByID(String id,String name, String description) {
-        JSONObject requestParams = new JSONObject();
         requestParams.put("name", name);
         requestParams.put("description", description);
         // Prepare request
