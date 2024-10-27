@@ -8,8 +8,6 @@
             <class name="ApiTests.getBrandNotExists.GetBrandNotExixtsRunner"/>
             <class name="ApiTests.postDuplicateBrands.PostDuplicateBrandsRunner"/>
             <class name="ApiTests.UpdateOrDeletNoExistBrand.UpdateOrDeletNoExistBrandRunner"/>
-
-
-        </classes>
+  </classes>
     </test>
 </suite>
